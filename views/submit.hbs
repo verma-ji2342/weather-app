@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            weather
+        </title>
+        <style>
+            body{
+            background-repeat: no-repeat;
+            background-image: url("https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+            background-size: 100%;
+            color: antiquewhite;
+            }
+            
+            #Final{
+                text-align: center;
+                margin-top: 10%;
+            }
+
+            #header{
+                font-size: 60px;
+                text-align: center;
+                font-family:cursive;
+                margin-top: 5%;
+            }
+            footer {
+                text-align: right;
+            }
+            #icon {
+                height: 90px;
+                width: 90px;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">Welcome To {{city}}</div>
+        <div id="Final">
+            <div>
+                <h1>Temprature : &nbsp; <span>{{temp}}</span></h1>
+                <h1>Pressure : &nbsp <span>{{pres}}</span></h1>
+                <h1>Weather : &nbsp <span>{{humid}}</span></h1>
+                <h1>Wind Speed : &nbsp <span>{{speed}}</span></h1>
+            </div>
+        </div>
+        <div id="icon">
+            <image src="{{photo}}"></image>
+        </div>
+        <footer>
+            <i>powered by @Pranjal</i>
+        </footer>
+    </body>
+</html>
